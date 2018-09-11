@@ -1,1 +1,8 @@
 https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+
+Do:
+git init
+git pull [gitRepo]
+git remote add origin [gitRepo]
+git remote set-url origin [gitRepo]
+git push --set-upstream origin master
