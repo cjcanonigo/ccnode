@@ -1,8 +1,15 @@
-https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+https://www.w3schools.com/nodejs/nodejs_url.asp
 
 Do:
 git init
 git pull [gitRepo]
 git remote add origin [gitRepo]
 git remote set-url origin [gitRepo]
+git push --set-upstream origin master
+
+Example:
+git init
+git pull git@github.com:cjcanonigo/ccnode.git
+git remote add origin git@github.com:cjcanonigo/ccnode.git
+git remote set-url origin git@github.com:cjcanonigo/ccnode.git
 git push --set-upstream origin master
