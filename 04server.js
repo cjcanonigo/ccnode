@@ -1,4 +1,4 @@
-//Edit the file system
+//Edit the file system - read a file
 let http = require('http');
 let fs = require('fs');
 let htmlFile = '04html.html';
