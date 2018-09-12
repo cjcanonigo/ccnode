@@ -37,6 +37,8 @@ let mailOptions = {
     //to: 'myfriend@yahoo.com, myotherfriend@yahoo.com',
     subject: 'Want some node?',
     text: "Too bad! Here's a graph instead :)",
+    //to send html instead:
+    //html: '<h1>Welcome</h1><p>That was easy!</p>'
     attachments: [
         {
             filename: 'coolChart.png',
