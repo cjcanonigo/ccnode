@@ -9,12 +9,19 @@ console.log(stringLiteral);
 //https://community.nodemailer.com/using-attachments/
 
 let nodemailer = require('nodemailer');
+//Note that the below file is excluded from git since it contains emails/pws.
+let creds = require('./15creds.json');
+/* The above json file is formatted this way:
+{
+    "sender": "senderemail@gmail.com",
+    "senderSecret": "senderemailpassword",
+    "recipient": "recipientemail@gmail.com"
+}
+*/
 
-//Load these with real values. I made a new gmail account,
-//Populated the below, and sent emails to my regular gmail account.
-let sender = ''; //email to send from
-let senderSecret = ''; //email pw for above
-let recipient = ''; //recipient of email
+let sender = creds.sender;
+let senderSecret = creds.senderSecret;
+let recipient = creds.recipient;
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -29,7 +36,7 @@ let mailOptions = {
     //syntax for multiple recipients:
     //to: 'myfriend@yahoo.com, myotherfriend@yahoo.com',
     subject: 'Want some node?',
-    text: "Too bad! Here's a graph instead.",
+    text: "Too bad! Here's a graph instead :)",
     attachments: [
         {
             filename: 'coolChart.png',
