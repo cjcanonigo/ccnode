@@ -16,15 +16,10 @@ const textToAppend = '\nLook, I added a new line.';
 const newFile = '05newfile.txt';
 const newFileText = 'I created a brand new file!';
 
-
-
 let handleAppendError = err => {
     if(err) throw err;
     console.log('Data was saved!'); //if no error, print this
 };
-
-
-
 
 // Add to existing file
 fs.appendFile(myFile, textToAppend, handleAppendError);

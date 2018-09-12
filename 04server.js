@@ -5,7 +5,7 @@ let htmlFile = '04html.html';
 
 let pageData = (req, res) => {
     fs.readFile(htmlFile, (err, data) => {
-        res.writeHead(200, {'Content-Type': 'text/html'})
+        res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data);
         res.end();
     });
