@@ -1,5 +1,7 @@
 //follow along here: https://www.youtube.com/watch?v=pKd0Rpw7O48
 // this goes up to 15min.
+// Also, check out some of the Express documentation here:
+// http://expressjs.com/en/4x/api.html#req
 
 const express = require('express');
 const app = express();
